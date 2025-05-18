@@ -44,6 +44,24 @@ const CHALLENGE_COMMAND = {
   contexts: [0, 2],
 };
 
-const ALL_COMMANDS = [TEST_COMMAND, CHALLENGE_COMMAND];
+// Command containing options
+const GAY_COMMAND = {
+  name: 'gay',
+  description: 'Let yourself be analyzed and get a report on your level of gay particles.',
+  options: [
+    {
+      type: 3,
+      name: 'anser',
+      description: 'r u a boykisser?',
+      required: true,
+      choices: createCommandChoices(),
+    },
+  ],
+  type: 1,
+  integration_types: [0, 1],
+  contexts: [0, 2],
+};
+
+const ALL_COMMANDS = [TEST_COMMAND, CHALLENGE_COMMAND, GAY_COMMAND];
 
 InstallGlobalCommands(process.env.APP_ID, ALL_COMMANDS);
