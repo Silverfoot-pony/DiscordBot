@@ -61,7 +61,7 @@ The commands for the example app are set up in `commands.js`. All of the command
 npm run register
 ```
 
-### Run the appp
+### Run the app
 
 After your credentials are added, go ahead and run the app:
 
